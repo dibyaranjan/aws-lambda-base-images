@@ -5,6 +5,9 @@ ADD x86_64/3c461c2681ef4abdd99caef90d43fed2d2fab070d4885fc277dc9fb7046b8784.tar.
 ADD x86_64/47f5cfb2e35104caaf8071a83b4e72132639b513d837ad77035cc9b86066d7d4.tar.xz /
 ADD x86_64/4b77937394c47436dacf26f75855d4220a8f776ca0b49c35e55038ffccb2f82b.tar.xz /
 ADD x86_64/79fb812e112a7bd374230ecc579a7fe055896e105e5e89c49861fdf9209c74f2.tar.xz /
+ADD x86_64/ffmpeg-release-amd64-static.tar.xz /
+
+RUN ln -s /ffmpeg-4.4.1-amd64-static/ffmpeg /usr/bin/ffmpeg
 
 ENV LANG=en_US.UTF-8
 ENV TZ=:/etc/localtime
